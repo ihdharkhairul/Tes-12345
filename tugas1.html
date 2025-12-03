@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Catatan Tugas Kuliah Minggu Ini</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f2f6ff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #fc594a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 20px 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #fc5f4a;
+      padding-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #fc654a;
+      color: white;
+    }
+
+    .tugas {
+      margin-top: 20px;
+    }
+
+    input, select {
+      padding: 6px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #fc594a;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff1100;
+    }
+
+    .tugas-list li {
+      background: #eef3ff;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>Web Catatan Tugas Kuliah Minggu Ini</header>
+
+  <div class="container">
+    <section id="data-diri">
+      <h2>Data Diri Mahasiswa</h2>
+      <p><strong>Nama:</strong> <span id="nama">Muhammd Khairul Ihdhar</span></p>
+      <p><strong>NIM:</strong> <span id="nim">707012530002</span></p>
+      <p><strong>Program Studi:</strong> <span id="prodi">S1 Terapan Sistem Informasi Kota Cerdas</span></p>
+      <p><strong>Kelas:</strong> <span id="kelas">SIKC-4905</span></p>
+    </section>
+    <section id="jadwal">
+      <h2>Jadwal Kuliah Minggu Ini</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Hari</th>
+            <th>Mata Kuliah</th>
+            <th>Waktu</th>
+            <th>Kode Dosen</th>
+            <th>Ruangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Senin</td>
+            <td><ol>
+                <li>Desain Antarmuka Pengguna</li>
+                <li>Desain Antarmuka Pengguna</li>
+            </ol></td>
+            <td><ol>
+                <li>09.30 - 12.30</li>
+                <li>14.30 - 16.30</li>
+            </ol></td>
+            <td><ol>
+                <li>AUC</li>
+                <li>AUC</li>
+            </ol></td>
+            <td><ol>
+                <li>B4</li>
+                <li>C3</li>
+            </ol></td>
+          </tr>
+
+          <tr>
+            <td>Selasa</td>
+            <td><ol>
+                <li>Algoritma Pemrograman</li>
+            </ol></td>
+            <td><ol>
+                <li>06.30 - 08.30</li>
+            </ol></td>
+            <td><ol>
+                <li>ASA</li>
+            </ol></td>
+            <td><ol>
+                <li>A3</li>
+            </ol></td>
+          </tr>
+
+          <tr>
+            <td>Rabu</td>
+            <td><ol>
+                <li>Internalisasi Budaya Dan Pembentukan Karakter</li>
+            </ol></td>
+            <td><ol>
+                <li>12.30 - 14.30</li>
+            </ol></td>
+            <td><ol>
+                <li>AUC</li>
+            </ol></td>
+            <td><ol>
+                <li>KU3.07.20</li>
+            </ol></td>
+          </tr>
+          <tr>
+            <td>Kamis</td>
+            <td><ol>
+                 <li>Algoritma Dan Pemrograman</li>
+                 <li>Jaringan Komputer</li>
+                 <li>Bahasa Inggris</li>
+            </ol></td>
+            <td><ol>
+                <li>06.30 - 10.30</li>
+                <li>10.30 - 12.30</li>
+                <li>16.30 - 18.30</li>
+            </ol></td>
+            <td><ol>
+                <li>ASA</li>
+                <li>JUL</li>
+                <li>PWW</li>
+            </ol></td>
+            <td><ol>
+                <li>B5</li>
+                <li>G3</li>
+                <li>KU3.05.01</li>
+            </ol></td>
+          </tr>
+          <tr>
+            <td>Jumat</td>
+            <td><ol>
+                <li>Pengantar Teknologi Informasi</li>
+                <li>Jaringan Komputer</li>
+            </ol></td>
+            <td><ol>
+                <li>06.30 - 09.30</li>
+                <li>13.30 - 15.30</li>
+            </ol></td>
+            <td><ol>
+                <li>TGN</li>
+                <li>JUL</li>
+            </ol></td>
+            <td><ol>
+                <li>KU3.07.04</li>
+                <li>G4</li>
+            </ol></td>
+          </tr>
+          <tr>
+            <td>Sabtu</td>
+            <td><ol>
+                <li>Sistem Informasi Manajemen Kota Cerdas</li>
+                <li>Matematika Diskrit</li>
+            </ol></td>
+            <td><ol>
+                <li>07.30 - 11.30</li>
+                <li>12.30 - 15.30</li>
+            </ol></td>
+            <td><ol>
+                <li>IKO</li>
+                <li>RJL</li>
+            </ol></td>
+            <td><ol>
+                <li>CCR5</li>
+                <li>KU3.07.19</li>
+            </ol></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="tugas">
+      <h2>Tugas Kuliah Minggu Ini</h2>
+      <input type="text" id="tugasInput" placeholder="Masukkan tugas baru...">
+      <button onclick="tambahTugas()">Tambah</button>
+
+      <ul class="tugas-list" id="listTugas">
+        <li>Desain Antarmuka Pengguna: Tugas Web Catatan Tugas Kuliah Minggu Ini(Deadline 17 November)</li>
+        <li>Tugas Jaringan Komputer Latihan 8 (deadline 18 november Jam 12 Siang)</li>
+        <li>Tugas 3 di LMS minggu 9 IBPK Ringkasan Novel yang telah dibaca (Deadline 19 November jam 12 siang)</li>
+        <li>⁠Tugas Jringan Komputer minggu 9 web server di LMS Deadline (20 November jam 12 siang)</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    function tambahTugas() {
+      const input = document.getElementById("tugasInput");
+      const tugas = input.value.trim();
+      if (tugas === "") {
+        alert("Tugas tidak boleh kosong!");
+        return;
+      }
+
+      const list = document.getElementById("listTugas");
+      const li = document.createElement("li");
+      li.textContent = tugas;
+      list.appendChild(li);
+      input.value = "";
+    }
+  </script>
+</body>
+</html>
